@@ -24,8 +24,8 @@ function EventCard({ name, description='', imageSrc='' }: { name: string, descri
     <div className='relative w-60'>
       <div className='absolute top-4 left-4 h-5 w-5 bg-orange-400 rounded-full blur-lg' />
       <div className='p-4 m-4 bg-[#ffffff90] rounded-xl drop-shadow-[0_0_0.3rem_#b1afaf70]'>
-        <p className="font-bold">{name}</p>
-        { description ? <p className='mt-2'>{description}</p> : null }
+        <p className="font-bold dark:text-black">{name}</p>
+        { description ? <p className='mt-2 dark:text-black'>{description}</p> : null }
         { imageSrc ? 
           <div>
             <Image
@@ -49,9 +49,9 @@ export default function Home() {
       {/* HEADER */}
       <div className="w-full flex place-items-center justify-around flex-wrap pb-4">
         <div className="p-8 my-14 mx-8 lg:max-w-[600px] md:max-w-[400px] sm:max-w-full bg-[#ffffff90] rounded-xl drop-shadow-[0_0_0.3rem_#ffffff70]">
-          <h1 className='text-[36px] font-bold'>Cindy Baker</h1>
+          <h1 className='text-[36px] font-bold dark:text-black'>Cindy Baker</h1>
           <div className='h-[1px] w-3/4 bg-gray-200 my-8' />
-          <p>Some example summary of whatever you want people to know about you can go here. The rest of this 
+          <p className='dark:text-black'>Some example summary of whatever you want people to know about you can go here. The rest of this 
             is just placeholder for now yay. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat vulputate sollicitudin. In hac habitasse platea dictumst. Aliquam sit amet tortor at odio vehicula sollicitudin eu et risus. Morbi convallis metus luctus ipsum lacinia, sed auctor lacus condimentum. Donec blandit vitae erat et pretium.</p>
         </div>
 
@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       <div className='flex justify-around flex-wrap gap-8 w-full max-w-[1080px] mt-10 mb-10'>
-        <div className="relative mb-20 after:absolute after:-z-20 after:h-[280px] after:w-[340px] after:translate-x-1/2 after:translate-y-[-250px] after:bg-gradient-conic after:from-pink-200 after:via-pink-200 after:blur-2xl after:content-[''] before:absolute before:-z-20 before:h-[240px] before:w-[240px] before:translate-x-[-100px] before:translate-y-[0px] before:bg-gradient-radial before:from-yellow-100 before:via-orange-100 before:to-red-100 before:blur-2xl before:content-['']">
+        <div className="relative mb-20 after:absolute after:-z-20 after:h-[280px] after:w-[340px] after:translate-x-1/2 after:translate-y-[-250px] after:bg-gradient-conic after:from-pink-200 after:via-pink-200 after:blur-2xl after:content-[''] before:absolute before:-z-20 before:h-[240px] before:w-[240px] before:translate-x-[-100px] before:translate-y-[0px] before:bg-gradient-radial before:from-yellow-100 before:via-orange-100 dark:before:opacity-40 dark:after:opacity-40 before:to-red-100 before:blur-2xl before:content-['']">
           <ImageWithBorders
             src="/oscars_2.jpg"
             alt="Cindy Baker at the Oscars"
@@ -118,7 +118,7 @@ export default function Home() {
             height={37}
           />
         </div>
-        <div className="relative mb-20 after:absolute after:-z-20 after:h-[280px] after:w-[340px] after:translate-x-1/3 after:translate-y-[-100px] after:bg-gradient-conic after:from-purple-100 after:via-purple-200 after:blur-2xl after:content-[''] before:absolute before:-z-20 before:h-[240px] before:w-[240px] before:translate-x-[-100px] before:translate-y-[-140px] before:bg-gradient-radial before:from-blue-100 before:via-blue-100 before:to-red-100 before:blur-2xl before:content-['']">
+        <div className="relative mb-20 after:absolute after:-z-20 after:h-[280px] after:w-[340px] after:translate-x-1/3 after:translate-y-[-100px] after:bg-gradient-conic after:from-purple-100 after:via-purple-200 after:blur-2xl after:rotate-90 after:content-[''] before:absolute before:-z-20 before:h-[240px] before:w-[240px] before:translate-x-[-100px] before:translate-y-[-140px] before:bg-gradient-radial before:from-blue-100 before:via-blue-100 dark:before:opacity-40 dark:after:opacity-40 before:rounded-full before:blur-2xl before:content-['']">
           <ImageWithBorders
             src="/egot_2.jpg"
             alt="Cindy Baker with her Egot award"
@@ -131,12 +131,12 @@ export default function Home() {
       {/* FOOTER */}
       <div className="flex flex-wrap place-items-center justify-around w-5/6 mb-8 px-4 py-6 bg-[#ffffffee] rounded-2xl drop-shadow-[0_0_8px_#b1afaf40]">
         <div className='text-center p-4'>
-          <p className='font-bold'>Contact</p>
-          <p>an-email-address@gmail.com</p>
+          <p className='font-bold dark:text-black'>Contact</p>
+          <p className='dark:text-black'>an-email-address@gmail.com</p>
         </div>
         <div className='text-center p-4'>
-          <p className='font-bold'>Social Media</p>
-          <p>facebook icon / linkedin</p>
+          <p className='font-bold dark:text-black'>Social Media</p>
+          <p className='dark:text-black'>facebook icon / linkedin</p>
         </div>
       </div>
     </main>
