@@ -50,7 +50,7 @@ export default function Home() {
       <div className="w-full flex place-items-center justify-around flex-wrap pb-4">
         <div className="p-8 my-14 mx-8 lg:max-w-[600px] md:max-w-[400px] sm:max-w-full bg-[#ffffff90] rounded-xl drop-shadow-[0_0_0.3rem_#ffffff70]">
           <h1 className='text-[36px] font-bold dark:text-black'>Cindy Baker</h1>
-          <div className='h-[1px] w-3/4 bg-gray-200 my-8' />
+          <div className='h-[1px] w-3/4 bg-gray-200 dark:bg-gray-700 my-8' />
           <p className='dark:text-black'>Some example summary of whatever you want people to know about you can go here. The rest of this 
             is just placeholder for now yay. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat vulputate sollicitudin. In hac habitasse platea dictumst. Aliquam sit amet tortor at odio vehicula sollicitudin eu et risus. Morbi convallis metus luctus ipsum lacinia, sed auctor lacus condimentum. Donec blandit vitae erat et pretium.</p>
         </div>
